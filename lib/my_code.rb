@@ -71,9 +71,12 @@ end
 
 def reduce_to_any_true(array)
   counter = 0
+  true_values = 0
+  false_values = 0
 
   while counter < array.length do
-    true & array[counter] ? true : false
+    true & array[counter] ? true_values += 1 : false_values += 1
     counter += 1
   end
+  true_values > 0 ? true : false
 end
