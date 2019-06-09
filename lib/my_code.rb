@@ -78,5 +78,5 @@ def reduce_to_any_true(array)
     true & array[counter] ? true_values += 1 : false_values += 1
     counter += 1
   end
-  true_values > 0 ? true : false
+  true_values >= 1 ? true : false
 end
