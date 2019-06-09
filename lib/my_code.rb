@@ -64,7 +64,6 @@ def reduce_to_all_true(array)
 
   while counter < array.length do
     true & array[counter] ? true_values += 1 : false_values += 1
-    binding.pry
     counter += 1
   end
   true_values == array.length ? true : false
