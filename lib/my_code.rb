@@ -63,7 +63,7 @@ def reduce_to_all_true(array)
   false_values = 0
 
   while counter < array.length do
-    array[counter] == true ? true_values += 1 : false_values += 1
+    array[counter].is_a?(TrueClass) ? true_values += 1 : false_values += 1
     binding.pry
     counter += 1
   end
